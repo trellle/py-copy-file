@@ -1,6 +1,6 @@
 def copy_file(command: str) -> None:
     params = command.split()
-    if len(params) < 3 or params[1] == params[2]:
+    if len(params) != 3 or params[1] == params[2]:
         return
     try:
         file1 = open(params[1], "r")
